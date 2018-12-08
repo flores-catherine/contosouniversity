@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Slabo+27px');
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #0053B1;
+    font-family: 'Slabo 27px', serif;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+.banner-thingy {
+    background-image: url(../images/san-jose-state-university-106864_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    color: black;
+}
+
+.banner-thingy .container h1 {
+    margin-top: 50px;
+}
+
+.container-fluid {
+    padding:0;
+}
+
+.center-ish h3 {
+    text-align: center;
+}
+
+.center-ish .fas {
+    font-size: 5em;
+    margin-left: 100px;
+}
+
+.blue {
+    background: #0053B1;
+    color: #7eb8f7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -50px;
+    box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, 0.4);
+}
+
+.blue h2 {
+    font-size: 50px;
+}
+
+.gray {
+    background: #eee;
+    box-shadow: inset 0 -20px 40px -20px rgba(0, 0, 0, 0.15);
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.gray img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.gray a{
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+    color: #0053B1;
+    font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover {
+    color: #0053B1;
+    font-weight: bold;
+}
+
+.university-img img{
+    width:100%;
+}
+
+.too-close {
+    margin-top: 50px;
+}
+
+.mission {
+    background: #EFF2F7;
+    padding: 25px;
+}

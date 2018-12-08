@@ -1,0 +1,56 @@
+﻿@page
+@model ContosoUniversity.Pages.AboutModel
+
+@{
+    ViewData["Title"] = "Student Body Statistics";
+}
+<div class="container">
+    <h1>About Contoso University</h1>
+    <div class="row">
+        <div class="col-sm-12 university-img">
+            <img src="~/images/university.jpg" />
+        </div>
+    </div>
+
+    <div class="row too-close">
+        <div class="col-sm-8">
+            <div class="mission">
+                <h2>Mission Statement</h2>
+                <p>Contoso University is a private, four-year university. Since its founding in 1876, Contoso university has resolved to focus on teaching students relevant skills for the workplace. </p>
+                <p> Contoso seeks to create a innovative learning environment in which students can focus on learning, creating, researching new technoligies. The university is committed to embracing diversity. Student success is our top priority and will be achieved through accessible programs. </p>
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+            <h3>Student Body Statistics</h3>
+
+            <table>
+                <tr>
+                    <th>
+                        Enrollment Date
+                    </th>
+                    <th>
+                        Students
+                    </th>
+                </tr>
+
+                @foreach (var item in Model.Student)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                        </td>
+                        <td>
+                            @item.StudentCount
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Contact</h2>
+        <p>Catherine Flores</p>
+        <p>Email: flo16027@byui.edu</p>
+    </div>
+</div>
